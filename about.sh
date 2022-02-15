@@ -12,7 +12,7 @@ echo -e "#----------------------------------------------------------------------
 echo -e "#                              ☞︎︎︎ Thanks To ☜︎︎︎                                " | lolcat
 echo -e "#-----------------------------------------------------#-----------------------" | lolcat
 echo -e "#                              ☞︎︎︎ Allah SWT ☜︎︎︎                                 " | lolcat
-echo -e "#                                My Family                                    " | lolcat
+echo -e "#                                •My Family•                                    " | lolcat
 echo -e "#                              ꧁  nikstore  ꧂                           " | lolcat
 echo -e "#                               ꧁ VPNCrew ꧂                                " | lolcat
 echo -e "#                               ꧁ My Self ꧂                                " | lolcat
