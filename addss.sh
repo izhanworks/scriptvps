@@ -34,7 +34,7 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 read -p "Expired (hari): " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 cat > /etc/shadowsocks-libev/$user-tls.json<<END
-{   
+{
     "server":"0.0.0.0",
     "server_port":$tls,
     "password":"$user",

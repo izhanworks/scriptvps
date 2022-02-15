@@ -1,4 +1,16 @@
 #!/bin/bash
+RED="\e[1;31m"
+GREEN="\e[0;32m"
+NC="\e[0m"
+MYIP=$(wget -qO- ipinfo.io/ip);
+IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/special-ip | grep $MYIP )
+if [ $MYIP = $IZIN ]; then
+clear
+echo -e ""
+else
+echo "SILA PM @naimstore UNTUK DAFTAR IP"
+exit 0
+fi
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
