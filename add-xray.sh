@@ -1,19 +1,4 @@
 #!/bin/bash
-IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/special-ip | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-clear
-echo -e ""
-else
-echo "SILA PM @naimstore UNTUK DAFTAR IP"
-exit 0
-fi
-source /var/lib/premium-script/ipvps.conf
-if [[ "$IP" = "" ]]; then
-domain=$(cat /etc/v2ray/domain)
-else
-domain=$IP
-fi
-
 # // Vless
 vless1="$( cat /etc/xray-mini/vless-direct.json | grep -w port | awk '{print $2}' | sed 's/,//g' )"
 vless2="$( cat /etc/xray-mini/vless-splice.json | grep -w port | awk '{print $2}' | sed 's/,//g' )"

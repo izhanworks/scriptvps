@@ -1,16 +1,4 @@
 #!/bin/bash
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
-IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/special-ip | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-clear
-echo -e ""
-else
-echo "SILA PM @naimstore UNTUK DAFTAR IP"
-exit 0
-fi
 echo "Checking VPS"
 clear
 # Load params
