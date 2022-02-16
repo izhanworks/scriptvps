@@ -6,7 +6,7 @@ NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 echo -e  "${RED}Checking VPS${NC}"
 sleep 2
-IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/acceptip | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/blob/main/acceptip | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${GREEN}Permission Accepted...${NC}"
 sleep 2
