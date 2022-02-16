@@ -5,27 +5,15 @@ GREEN='\e[0;32m'
 BLUE='\e[0;34m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
-echo -e  "${RED}Checking VPS${NC}"
-sleep 2
 IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/acceptip | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
-echo -e "${GREEN}Permission Accepted...${NC}"
-sleep 2
-else
 clear
 echo -e ""
-echo -e "======================================="
-echo -e ""
-echo -e "${RED}Permission Denied...!!! ${NC}"
-echo -e "IP VPS ANDA BELUM TERDAFTAR"
-echo -e "Contact TELE @naimstore"
-echo -e "For Registration IP VPS"
-echo -e ""
-echo -e "======================================="
-echo -e ""
-rm setup.sh
+else
+echo "Script lain cantik lagi.><"
 exit 0
 fi
+
 clear
 source /var/lib/premium-script/ipvps.conf
 if [[ "$IP" = "" ]]; then
