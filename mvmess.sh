@@ -1,5 +1,18 @@
 #!/bin/bash
-
+red='\e[1;31m'
+green='\e[0;32m'
+NC='\e[0m'
+MYIP=$(wget -qO- ifconfig.co);
+echo "Checking VPS"
+MYIP=$(wget -qO- ipinfo.io/ip);
+IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/special-ip | grep $MYIP )
+if [ $MYIP = $IZIN ]; then
+clear
+echo -e ""
+else
+echo "pm @naimstore untuk daftar ip"
+exit 0
+fi
 clear
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
