@@ -1,13 +1,6 @@
 #!/bin/bash
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/acceptip | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-clear
-echo -e ""
-else
-echo "Script lain cantik lagi.><"
-exit 0
-fi
+
 clear
 # Load params
 source /etc/wireguard/params

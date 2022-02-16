@@ -1,14 +1,6 @@
 #!/bin/bash
 echo "Checking VPS"'
-MYIP=$(wget -qO- icanhazip.com);
-IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/acceptip | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-clear
-echo -e ""
-else
-echo "Script lain cantik lagi.><"
-exit 0
-fi
+
 clear
 source /var/lib/premium-script/ipvps.conf
 if [[ "$IP" = "" ]]; then
