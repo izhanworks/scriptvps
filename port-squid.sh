@@ -1,4 +1,14 @@
 #!/bin/bash
+echo "Checking VPS"
+MYIP=$(wget -qO- ipinfo.io/ip);
+IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/acceptip | grep $MYIP )
+if [ $MYIP = $IZIN ]; then
+clear
+echo -e ""
+else
+echo "You're not Allowed to use this script"
+exit 0
+fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
@@ -57,4 +67,3 @@ menu
 echo "Please enter an correct number"
 ;;
 esac
-

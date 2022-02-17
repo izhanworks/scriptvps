@@ -1,4 +1,14 @@
 #!/bin/bash
+echo "Checking VPS"
+MYIP=$(wget -qO- ipinfo.io/ip);
+IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/acceptip | grep $MYIP )
+if [ $MYIP = $IZIN ]; then
+clear
+echo -e ""
+else
+echo "You're not Allowed to use this script"
+exit 0
+fi
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/nikstore/scriptvps/main/rclone.conf"
@@ -21,7 +31,7 @@ port 587
 auth on
 user email kalian@gmail.com
 from email kaliN@gmail.com
-password password 
+password password
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
@@ -40,4 +50,3 @@ chmod +x strt
 chmod +x limit-speed
 cd
 rm -f /root/set-br.sh
-

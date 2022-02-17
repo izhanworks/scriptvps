@@ -1,5 +1,15 @@
 #!/bin/bash
 #shadowsocks-libev obfs install by naikstore
+echo "Checking VPS"
+MYIP=$(wget -qO- ipinfo.io/ip);
+IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/acceptip | grep $MYIP )
+if [ $MYIP = $IZIN ]; then
+clear
+echo -e ""
+else
+echo "You're not Allowed to use this script"
+exit 0
+fi
 source /etc/os-release
 OS=$ID
 ver=$VERSION_ID
@@ -39,7 +49,7 @@ echo "#############################################"
 echo "#############################################"
 echo "Konfigurasi Server."
 cat > /etc/shadowsocks-libev/config.json <<END
-{   
+{
     "server":"0.0.0.0",
     "server_port":8488,
     "password":"tes",
