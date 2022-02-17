@@ -1,5 +1,14 @@
 #!/bin/bash
-
+echo "Checking VPS"
+MYIP=$(wget -qO- ipinfo.io/ip);
+IZIN=$( curl https://raw.githubusercontent.com/nikstore/acceptip/main/acceptip | grep $MYIP )
+if [ $MYIP = $IZIN ]; then
+clear
+echo -e ""
+else
+echo "You're not Allowed to use this script"
+exit 0
+fi
 
 
 if [ "${EUID}" -ne 0 ]; then
@@ -26,8 +35,6 @@ read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
 echo "$host" >> /root/domain
-echo "V1.0" >> /home/version
-echo "@rahsia" >> /home/contact
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
