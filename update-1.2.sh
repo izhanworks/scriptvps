@@ -46,6 +46,17 @@ wget -O add-sstp "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-
 wget -O add-ws "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-ws.sh"
 wget -O add-vless "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-vless.sh"
 wget -O add-tr "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-tr.sh"
+clear
+echo -e "$green   =============================================$NC"
+echo -e "$green                 Update Selesai                 $NC"
+echo -e "$green   =============================================$NC"
+sleep 1
+clear
+echo -e "$green   =============================================$NC"
+echo -e "$green            Proses Restart Akan Dimulakan       $NC"
+echo -e "$green   =============================================$NC"
+sleep 1
+clear
 chmod +x change
 chmod +x port-ovpn
 chmod +x port-ssl
@@ -62,6 +73,13 @@ echo "0 5 * * * root clear-log && reboot" > /etc/crontab
 echo "0 0 * * * root xp" > /etc/crontab
 cd
 echo "1.2" > /home/ver
+clear
+echo -e "$green   =============================================$NC"
+echo -e "$green         Proses Update Telah Selesai            $NC"
+echo -e "$green    Sila Tunggu Proses Reboot daan Taip Menu    $NC"
+echo -e "$green            Enjoy This Script                   $NC"
+echo -e "$green   =============================================$NC"
+sleep 3
 clear
 echo " Fix minor Bugs"
 echo " Now You Can Change Port Of Some Services"

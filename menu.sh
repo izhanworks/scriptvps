@@ -70,27 +70,40 @@ IPVPS=$(curl -s ipinfo.io/ip )
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
-
-	echo -e "   $green VPS Type             :$NC  $typevps"
- 	echo -e "   $green CPU Model            :$NC $cname"
- 	echo -e "   $green CPU Frequency        :$NC $freq MHz"
- 	echo -e "   $green Number Of Cores      :$NC  $cores"
- 	echo -e "   $green CPU Usage            :$NC  $cpu_usage"
- 	echo -e "   $green Operating System     :$NC  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
- 	echo -e "   $green Kernel               :$NC  `uname -r`"
- 	echo -e "   $green Total Amount Of RAM  :$NC  $tram MB"
- 	echo -e "   $green Used RAM             :$NC  $uram MB"
- 	echo -e "   $green Free RAM             :$NC  $fram MB"
- 	echo -e "   $green System Uptime        :$NC  $uptime $DF( From VPS Booting )"
- 	echo -e "   $green Isp Name             :$NC  $ISP"
- 	echo -e "   $green Domain               :$NC  $domain"
+echo ""
+echo -e "$green                                                                                     $NC"
+echo -e "$PURPLE ##::: ##::::'###::::'####:'##::::'##::'######::'########::'#######::'########::'########: $NC"
+echo -e "$PURPLE ###:: ##:::'## ##:::. ##:: ###::'###:'##... ##:... ##..::'##.... ##: ##.... ##: ##.....:: $NC"
+echo -e "$PURPLE ####: ##::'##:. ##::: ##:: ####'####: ##:::..::::: ##:::: ##:::: ##: ##:::: ##: ##::::::: $NC"
+echo -e "$PURPLE ## ## ##:'##:::. ##:: ##:: ## ### ##:. ######::::: ##:::: ##:::: ##: ########:: ######::: $NC"
+echo -e "$PURPLE ##. ####: #########:: ##:: ##. #: ##::..... ##:::: ##:::: ##:::: ##: ##.. ##::: ##...:::: $NC"
+echo -e "$PURPLE ##:. ###: ##.... ##:: ##:: ##:.:: ##:'##::: ##:::: ##:::: ##:::: ##: ##::. ##:: ##::::::: $NC"
+echo -e "$PURPLE ##::. ##: ##:::: ##:'####: ##:::: ##:. ######::::: ##::::. #######:: ##:::. ##: ########: $NC"
+echo -e "                $green $Bold System Information $NC"
+echo -e "   $green VPS Type             :$NC  $typevps"
+	echo -e "   $green CPU Model            :$NC $cname"
+	echo -e "   $green CPU Frequency        :$NC $freq MHz"
+	echo -e "   $green Number Of Cores      :$NC  $cores"
+	echo -e "   $green CPU Usage            :$NC  $cpu_usage"
+	echo -e "   $green Operating System     :$NC  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
+	echo -e "   $green OS Family            :$NC  `uname -s`"
+	echo -e "   $green Kernel               :$NC  `uname -r`"
+	echo -e "   $green Bash Ver             :$NC  $versibash"
+	echo -e "   $green Total Amount Of RAM  :$NC  $tram MB"
+	echo -e "   $green Used RAM             :$NC  $uram MB"
+	echo -e "   $green Free RAM             :$NC  $fram MB"
+	echo -e "   $green System Uptime        :$NC  $uptime $DF( From VPS Booting )"
+	echo -e "   $green Download             :$NC  $downloadsize GB ( From Startup / VPS Booting )"
+	echo -e "   $green Upload               :$NC  $uploadsize GB ( From Startup / VPS Booting )"
+	echo -e "   $green Isp Name             :$NC  $ISP"
+	echo -e "   $green Domain               :$NC  $domain"
   echo -e "   $green Ip Vps               :$NC  $IPVPS"
- 	echo -e "   $green City                 :$NC  $CITY"
- 	echo -e "   $green Time                 :$NC  $WKT"
- 	echo -e "   $green Day                  :$NC  $DAY"
- 	echo -e "   $green Date                 :$NC  $DATE"
- 	echo -e "   $green Telegram             :$NC  $tele"
- 	echo -e "   $green Script Version       :$NC  $Sver"
+	echo -e "   $green City                 :$NC  $CITY"
+	echo -e "   $green Time                 :$NC  $WKT"
+	echo -e "   $green Day                  :$NC  $DAY"
+	echo -e "   $green Date                 :$NC  $DATE"
+	echo -e "   $green Telegram             :$NC  $tele"
+	echo -e "   $green Script Version       :$NC  $Sver"
 echo -e  "  ╔═════════════════════════════════════════════════════════════════╗" | lolcat
 echo -e  "  ║                          ┃ MAIN MENU ┃                          ║" |lolcat
 echo -e  "  ╠═════════════════════════════════════════════════════════════════╝" | lolcat
@@ -102,7 +115,7 @@ echo -e  " $nc ║   [4]   -> ->       $yl  Panel SSR & SS"
 echo -e  " $nc ║   [5]   -> ->       $yl  Panel VMESS"
 echo -e  " $nc ║   [6]   -> ->       $yl  Panel VLESS"
 echo -e  " $nc ║   [7]   -> ->       $yl  Panel Trojan"
-echo -e  " $nc ║   [8]   -> ->       $yl  Panel xray"
+echo -e  " $nc ║   [8]   -> ->       $yl  Panel Xray"
 echo -e  " $bl ║ "
 echo -e  "  ╠═════════════════════════════════════════════════════════════════╗" | lolcat
 echo -e  "  ║                           ┃ SYSTEM  ┃                           ║" | lolcat
@@ -121,7 +134,9 @@ echo -e  "  ║      [ 18 ] Check Usage of VPS Ram"
 echo -e  "  ║      [ 19 ] Reboot VPS"
 echo -e  "  ║      [ 20 ] Speedtest VPS"
 echo -e  "  ║      [ 21 ] Displaying System Information"
-echo -e  "  ║      [ 22 ] Info Script"
+echo -e  "  ║      [ 22 ] Check Running System Status Tunneling
+echo -e  "  ║      [ 23 ] Info Script"
+echo -e  "  ║      [ 24 ] Set Auto Reboot
 echo -e  "  ║"
 echo -e  "  ╠═════════════════════════════════════════════════════════════════╗\e[m" | lolcat
 echo -e  "  ║ [0] Exit Menu                                                   ║\e[m" | lolcat
@@ -193,8 +208,15 @@ echo -e   ""
 	 21)
    info
    ;;
+	 ;;
 	 22)
+	 running
+	 ;;
+	 23)
    about
+   ;;
+	 24)
+   Auto-Reboot
    ;;
    0)
    exit
