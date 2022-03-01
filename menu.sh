@@ -97,13 +97,15 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	echo -e "   $yell Telegram             :$NC  $tele"
 	echo -e "   $yell Script Version       :$NC  $Sver"
 	echo ""
-	    ##::: ##::::'###::::'####:'##::::'##:
-	    ###:: ##:::'## ##:::. ##:: ###::'###:
-	    ####: ##::'##:. ##::: ##:: ####'####:
-	    ## ## ##:'##:::. ##:: ##:: ## ### ##:
-	    ##. ####: #########:: ##:: ##. #: ##:
-	    ##:. ###: ##.... ##:: ##:: ##:.:: ##:
-	    ##::. ##: ##:::: ##:'####: ##:::: ##:
+	banner=$(cat /var/lib/banner-name/banner)
+	ASCII=$(cat /var/lib/banner-name/ASCII)
+	echo ""
+	figlet -f$ASCII "$banner" | lolcat
+	echo "___________________________________________________________"
+	username=$(cat /var/lib/banner-name/username)
+	echo ""
+	echo -e "Username:" "$username" | lolcat
+
 
 	echo -e  "  ╔═════════════════════════════════════════════════════════════════╗" | lolcat
 	echo -e  "  ║                          ┃ MAIN MENU ┃                          ║" |lolcat

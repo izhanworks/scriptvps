@@ -9,7 +9,12 @@ else
 echo "You're not Allowed to use this script"
 exit 0
 fi
-
+mkdir /var/lib/banner-name;
+echo "Enter your name, if not available, please click Enter"
+echo -e "Premium" >> /var/lib/banner-name/banner
+echo -e "standard" >> /var/lib/banner-name/ASCII
+echo -e "Nama Anda" >> /var/lib/banner-name/username
+echo -e "\e[93m" >> /var/lib/banner-name/colour
 
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
