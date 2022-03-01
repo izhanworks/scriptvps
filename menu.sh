@@ -134,10 +134,10 @@ echo -e  "  ║      [ 18 ] Check Usage of VPS Ram"
 echo -e  "  ║      [ 19 ] Reboot VPS"
 echo -e  "  ║      [ 20 ] Speedtest VPS"
 echo -e  "  ║      [ 21 ] Displaying System Information"
-echo -e  "  ║      [ 22 ] Check Running System Status Tunneling
+echo -e  "  ║      [ 22 ] Check Running System Status Tunneling"
 echo -e  "  ║      [ 23 ] Info Script"
-echo -e  "  ║      [ 24 ] Set Auto Reboot
-echo -e  "  ║"
+echo -e  "  ║      [ 24 ] Set Auto Reboot"
+echo -e  "  ║
 echo -e  "  ╠═════════════════════════════════════════════════════════════════╗\e[m" | lolcat
 echo -e  "  ║ [0] Exit Menu                                                   ║\e[m" | lolcat
 echo -e  "  ╚═════════════════════════════════════════════════════════════════╝\e[m" | lolcat
