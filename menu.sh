@@ -208,7 +208,6 @@ echo -e   ""
 	 21)
    info
    ;;
-	 ;;
 	 22)
 	 running
 	 ;;
