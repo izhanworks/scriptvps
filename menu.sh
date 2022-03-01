@@ -143,7 +143,7 @@ echo -e  "  ║ [0] Exit Menu                                                   
 echo -e  "  ╚═════════════════════════════════════════════════════════════════╝\e[m" | lolcat
 echo -e  ""
 read -p  "     Please select an option :  " menu
-echo -e   ""
+echo -e   "a"
  case $menu in
    1)
    mssh
@@ -221,5 +221,6 @@ echo -e   ""
    exit
    ;;
    *)
+	 echo -e "ERROR!! Please Enter an Correct Number"
    ;;
   esac
