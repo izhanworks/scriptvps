@@ -97,9 +97,8 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	echo -e "   $yell Telegram             :$NC  $tele"
 	echo -e "   $yell Script Version       :$NC  $Sver"
 	echo ""
-	banner=$(cat /var/lib/banner-name/banner)
-	ASCII=$(cat /var/lib/banner-name/ASCII)
-	echo ""
+
+
 	figlet -f$ASCII "$banner" | lolcat
 	echo "___________________________________________________________"
 	username=$(cat /var/lib/banner-name/username)
@@ -126,7 +125,7 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	echo -e  " $bl ║"
 	echo -e  " $nc ║      [ 10 ] Add/Change Subdomain Host For VPS"
 	echo -e  " $nc ║      [ 11 ] Add ID Cloudflare"
-	echo -e  " $nc ║      [ 12 ] Cloudflare Add-Ons"
+	echo -e  " $nc ║      [ 12 ] Change-Banner"
 	echo -e  " $nc ║      [ 13 ] Pointing BUG"
 	echo -e  " $nc ║      [ 14 ] Change Port Of Some Service"
 	echo -e  " $nc ║      [ 15 ] Autobackup Data VPS"
@@ -180,7 +179,7 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	   cfh
 	   ;;
 	   12)
-	   change
+	   Change-Banner
 	   ;;
 	   13)
 	   autobackup
