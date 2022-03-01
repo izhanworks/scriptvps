@@ -70,15 +70,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
-echo ""
-echo -e "$green                                                                                     $NC"
-echo -e "$PURPLE ##::: ##::::'###::::'####:'##::::'##::'######::'########::'#######::'########::'########: $NC"
-echo -e "$PURPLE ###:: ##:::'## ##:::. ##:: ###::'###:'##... ##:... ##..::'##.... ##: ##.... ##: ##.....:: $NC"
-echo -e "$PURPLE ####: ##::'##:. ##::: ##:: ####'####: ##:::..::::: ##:::: ##:::: ##: ##:::: ##: ##::::::: $NC"
-echo -e "$PURPLE ## ## ##:'##:::. ##:: ##:: ## ### ##:. ######::::: ##:::: ##:::: ##: ########:: ######::: $NC"
-echo -e "$PURPLE ##. ####: #########:: ##:: ##. #: ##::..... ##:::: ##:::: ##:::: ##: ##.. ##::: ##...:::: $NC"
-echo -e "$PURPLE ##:. ###: ##.... ##:: ##:: ##:.:: ##:'##::: ##:::: ##:::: ##:::: ##: ##::. ##:: ##::::::: $NC"
-echo -e "$PURPLE ##::. ##: ##:::: ##:'####: ##:::: ##:. ######::::: ##::::. #######:: ##:::. ##: ########: $NC"
+
 echo -e "                $green $Bold System Information $NC"
 echo -e "   $green VPS Type             :$NC  $typevps"
 	echo -e "   $green CPU Model            :$NC $cname"
@@ -104,123 +96,121 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	echo -e "   $green Date                 :$NC  $DATE"
 	echo -e "   $green Telegram             :$NC  $tele"
 	echo -e "   $green Script Version       :$NC  $Sver"
-echo -e  "  ╔═════════════════════════════════════════════════════════════════╗" | lolcat
-echo -e  "  ║                          ┃ MAIN MENU ┃                          ║" |lolcat
-echo -e  "  ╠═════════════════════════════════════════════════════════════════╝" | lolcat
-echo -e  " $bl ║"
-echo -e  " $nc ║   [1]   -> ->       $yl  SSH & OpenVPN"
-echo -e  " $nc ║   [2]   -> ->       $yl  Panel Wireguard"
-echo -e  " $nc ║   [3]   -> ->       $yl  Panel L2TP, PPTP & SSTP"
-echo -e  " $nc ║   [4]   -> ->       $yl  Panel SSR & SS"
-echo -e  " $nc ║   [5]   -> ->       $yl  Panel VMESS"
-echo -e  " $nc ║   [6]   -> ->       $yl  Panel VLESS"
-echo -e  " $nc ║   [7]   -> ->       $yl  Panel Trojan"
-echo -e  " $nc ║   [8]   -> ->       $yl  Panel Xray"
-echo -e  " $bl ║ "
-echo -e  "  ╠═════════════════════════════════════════════════════════════════╗" | lolcat
-echo -e  "  ║                           ┃ SYSTEM  ┃                           ║" | lolcat
-echo -e  "  ╠═════════════════════════════════════════════════════════════════╝" | lolcat
-echo -e  "  ║"
-echo -e  "  ║      [ 9 ] Add/Change Subdomain Host For VPS"
-echo -e  "  ║      [ 10 ] Add ID Cloudflare"
-echo -e  "  ║      [ 11 ] Cloudflare Add-Ons"
-echo -e  "  ║      [ 12 ] Pointing BUG"
-echo -e  "  ║      [ 13 ] Change Port Of Some Service"
-echo -e  "  ║      [ 14 ] Autobackup Data VPS"
-echo -e  "  ║      [ 15 ] Backup Data VPS"
-echo -e  "  ║      [ 16 ] Restore Data VPS"
-echo -e  "  ║      [ 17 ] Webmin Menu"
-echo -e  "  ║      [ 18 ] Check Usage of VPS Ram"
-echo -e  "  ║      [ 19 ] Reboot VPS"
-echo -e  "  ║      [ 20 ] Speedtest VPS"
-echo -e  "  ║      [ 21 ] Displaying System Information"
-echo -e  "  ║      [ 22 ] Check Running System Status Tunneling"
-echo -e  "  ║      [ 23 ] Info Script"
-echo -e  "  ║      [ 24 ] Set Auto Reboott"
-echo -e  "  ║
-echo -e  "  ╠═════════════════════════════════════════════════════════════════╗\e[m" | lolcat
-echo -e  "  ║ [0] Exit Menu                                                   ║\e[m" | lolcat
-echo -e  "  ╚═════════════════════════════════════════════════════════════════╝\e[m" | lolcat
-echo -e  ""
-read -p  "     Please select an option :  " menu
-echo -e   "a"
- case $menu in
-   1)
-   mssh
-   ;;
-   2)
-   mwg
-   ;;
-   3)
-   ml2ppss-tp
-   ;;
-   4)
-   mss-ssr
-   ;;
-   5)
-   mvmess
-   ;;
-   6)
-   mvless
-   ;;
-   7)
-   mtrojan
-   ;;
-	 8)
-	 mxray
-	 ;;
-   9)
-   add-host
-   ;;
-   10)
-   cff
-   ;;
-   11)
-   cfd
-   ;;
-   12)
-   cfh
-   ;;
-   13)
-   change
-   ;;
-   14)
-   autobackup
-   ;;
-   15)
-   backup
-   ;;
-   16)
-   restore
-   ;;
-   17)
-   wbmn
-   ;;
-   18)
-   ram
-   ;;
-	 19)
-   reboot
-   ;;
-	 20)
-   speedtest
-   ;;
-	 21)
-   info
-   ;;
-	 22)
-	 running
-	 ;;
-	 23)
-   about
-   ;;
-	 24)
-   Auto-Reboot
-   ;;
-   0)
-   exit
-   ;;
-   *)
-	 echo -e "ERROR!! Please Enter an Correct Number"
-   ;;
-  esac
+	echo ""
+	echo -e "$green                                                                                     $NC"
+	echo -e "$PURPLE ##::: ##::::'###::::'####:'##::::'##::'######::'########::'#######::'########::'########: $NC"
+	echo -e "$PURPLE ###:: ##:::'## ##:::. ##:: ###::'###:'##... ##:... ##..::'##.... ##: ##.... ##: ##.....:: $NC"
+	echo -e "$PURPLE ####: ##::'##:. ##::: ##:: ####'####: ##:::..::::: ##:::: ##:::: ##: ##:::: ##: ##::::::: $NC"
+	echo -e "$PURPLE ## ## ##:'##:::. ##:: ##:: ## ### ##:. ######::::: ##:::: ##:::: ##: ########:: ######::: $NC"
+	echo -e "$PURPLE ##. ####: #########:: ##:: ##. #: ##::..... ##:::: ##:::: ##:::: ##: ##.. ##::: ##...:::: $NC"
+	echo -e "$PURPLE ##:. ###: ##.... ##:: ##:: ##:.:: ##:'##::: ##:::: ##:::: ##:::: ##: ##::. ##:: ##::::::: $NC"
+	echo -e "$PURPLE ##::. ##: ##:::: ##:'####: ##:::: ##:. ######::::: ##::::. #######:: ##:::. ##: ########: $NC"
+	echo -e  "  ╔═════════════════════════════════════════════════════════════════╗" | lolcat
+	echo -e  "  ║                          ┃ MAIN MENU ┃                          ║" |lolcat
+	echo -e  "  ╠═════════════════════════════════════════════════════════════════╝" | lolcat
+	echo -e  " $bl ║"
+	echo -e  " $nc ║   [1]   -> ->         [SSH & OpenVPN" | lolcat
+	echo -e  " $nc ║   [2]   -> ->         [Panel Wireguard" | lolcat
+	echo -e  " $nc ║   [3]   -> ->         [Panel L2TP, PPTP & SSTP" | lolcat
+	echo -e  " $nc ║   [4]   -> ->         [Panel SSR & SS" | lolcat
+	echo -e  " $nc ║   [5]   -> ->         [Panel VMESS" | lolcat
+	echo -e  " $nc ║   [6]   -> ->         [Panel VLESS" | lolcat
+	echo -e  " $nc ║   [7]   -> ->         [Panel Trojan" | lolcat
+	echo -e  " $nc ║   [9]   -> ->         [Panel XRAY" | lolcat
+	echo -e  " $bl ║ "
+	echo -e  "  ╠═════════════════════════════════════════════════════════════════╗" | lolcat
+	echo -e  "  ║                           ┃ SYSTEM  ┃                           ║" | lolcat
+	echo -e  "  ╠═════════════════════════════════════════════════════════════════╝" | lolcat
+	echo -e  " $bl ║"
+	echo -e  " $nc ║      [ 10 ] Add/Change Subdomain Host For VPS"
+	echo -e  " $nc ║      [ 11 ] Add ID Cloudflare"
+	echo -e  " $nc ║      [ 12 ] Cloudflare Add-Ons"
+	echo -e  " $nc ║      [ 13 ] Pointing BUG"
+	echo -e  " $nc ║      [ 14 ] Change Port Of Some Service"
+	echo -e  " $nc ║      [ 15 ] Autobackup Data VPS"
+	echo -e  " $nc ║      [ 16 ] Backup Data VPS"
+	echo -e  " $nc ║      [ 16 ] Restore Data VPS"
+	echo -e  " $nc ║      [ 17 ] Webmin Menu"
+	echo -e  " $nc ║      [ 18 ] Check Usage of VPS Ram"
+	echo -e  " $nc ║      [ 19 ] Reboot VPS"
+	echo -e  " $nc ║      [ 20 ] Speedtest VPS"
+	echo -e  " $nc ║      [ 21 ] Displaying System Information"
+	echo -e  " $nc ║      [ 22 ] Info Script"
+	echo -e  " $bl ║"
+	echo -e  "  ╠═════════════════════════════════════════════════════════════════╗\e[m" | lolcat
+	echo -e  "  ║ [0] Exit Menu                                                   ║\e[m" | lolcat
+	echo -e  "  ╚═════════════════════════════════════════════════════════════════╝\e[m" | lolcat
+	echo -e  ""
+	read -p  "     Please select an option :  " menu
+	echo -e   ""
+	 case $menu in
+	   1)
+	   mssh
+	   ;;
+	   2)
+	   mwg
+	   ;;
+	   3)
+	   ml2ppss-tp
+	   ;;
+	   4)
+	   mss-ssr
+	   ;;
+	   5)
+	   mvmess
+	   ;;
+	   6)
+	   mvless
+	   ;;
+	   7)
+	   mtrojan
+	   ;;
+	   8)
+	   add-host
+	   ;;
+	   9)
+	   cff
+	   ;;
+	   10)
+	   cfd
+	   ;;
+	   11)
+	   cfh
+	   ;;
+	   12)
+	   change
+	   ;;
+	   13)
+	   autobackup
+	   ;;
+	   14)
+	   backup
+	   ;;
+	   15)
+	   restore
+	   ;;
+	   16)
+	   wbmn
+	   ;;
+	   17)
+	   ram
+	   ;;
+		 18)
+	   reboot
+	   ;;
+		 19)
+	   speedtest
+	   ;;
+		 20)
+	   info
+	   ;;
+		 21)
+	   about
+	   ;;
+	   0)
+	   exit
+	   ;;
+	   *)
+	   echo -e "ERROR!! Please Enter an Correct Number"
+	   ;;
+	  esac
