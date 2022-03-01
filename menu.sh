@@ -73,38 +73,38 @@ freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
 
 echo -e "                $green $Bold System Information $NC"
 echo -e "   $green VPS Type             :$NC  $typevps"
-	echo -e "   $green CPU Model            :$NC $cname"
-	echo -e "   $green CPU Frequency        :$NC $freq MHz"
-	echo -e "   $green Number Of Cores      :$NC  $cores"
-	echo -e "   $green CPU Usage            :$NC  $cpu_usage"
-	echo -e "   $green Operating System     :$NC  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
-	echo -e "   $green OS Family            :$NC  `uname -s`"
-	echo -e "   $green Kernel               :$NC  `uname -r`"
-	echo -e "   $green Bash Ver             :$NC  $versibash"
-	echo -e "   $green Total Amount Of RAM  :$NC  $tram MB"
-	echo -e "   $green Used RAM             :$NC  $uram MB"
-	echo -e "   $green Free RAM             :$NC  $fram MB"
-	echo -e "   $green System Uptime        :$NC  $uptime $DF( From VPS Booting )"
-	echo -e "   $green Download             :$NC  $downloadsize GB ( From Startup / VPS Booting )"
-	echo -e "   $green Upload               :$NC  $uploadsize GB ( From Startup / VPS Booting )"
-	echo -e "   $green Isp Name             :$NC  $ISP"
-	echo -e "   $green Domain               :$NC  $domain"
-  echo -e "   $green Ip Vps               :$NC  $IPVPS"
-	echo -e "   $green City                 :$NC  $CITY"
-	echo -e "   $green Time                 :$NC  $WKT"
-	echo -e "   $green Day                  :$NC  $DAY"
-	echo -e "   $green Date                 :$NC  $DATE"
-	echo -e "   $green Telegram             :$NC  $tele"
-	echo -e "   $green Script Version       :$NC  $Sver"
+	echo -e "   $yell CPU Model            :$NC $cname"
+	echo -e "   $yell CPU Frequency        :$NC $freq MHz"
+	echo -e "   $yell Number Of Cores      :$NC  $cores"
+	echo -e "   $yell CPU Usage            :$NC  $cpu_usage"
+	echo -e "   $yell Operating System     :$NC  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
+	echo -e "   $yell OS Family            :$NC  `uname -s`"
+	echo -e "   $yell Kernel               :$NC  `uname -r`"
+	echo -e "   $yell Bash Ver             :$NC  $versibash"
+	echo -e "   $yell Total Amount Of RAM  :$NC  $tram MB"
+	echo -e "   $yell Used RAM             :$NC  $uram MB"
+	echo -e "   $yell Free RAM             :$NC  $fram MB"
+	echo -e "   $yell System Uptime        :$NC  $uptime $DF( From VPS Booting )"
+	echo -e "   $yell Download             :$NC  $downloadsize GB ( From Startup / VPS Booting )"
+	echo -e "   $yell Upload               :$NC  $uploadsize GB ( From Startup / VPS Booting )"
+	echo -e "   $yell Isp Name             :$NC  $ISP"
+	echo -e "   $yell Domain               :$NC  $domain"
+  echo -e "   $yell Ip Vps               :$NC  $IPVPS"
+	echo -e "   $yell City                 :$NC  $CITY"
+	echo -e "   $yell Time                 :$NC  $WKT"
+	echo -e "   $yell Day                  :$NC  $DAY"
+	echo -e "   $yell Date                 :$NC  $DATE"
+	echo -e "   $yell Telegram             :$NC  $tele"
+	echo -e "   $yell Script Version       :$NC  $Sver"
 	echo ""
-	echo -e "$green                                                                                     $NC"
-	echo -e "$PURPLE ##::: ##::::'###::::'####:'##::::'##::'######::'########::'#######::'########::'########: $NC"
-	echo -e "$PURPLE ###:: ##:::'## ##:::. ##:: ###::'###:'##... ##:... ##..::'##.... ##: ##.... ##: ##.....:: $NC"
-	echo -e "$PURPLE ####: ##::'##:. ##::: ##:: ####'####: ##:::..::::: ##:::: ##:::: ##: ##:::: ##: ##::::::: $NC"
-	echo -e "$PURPLE ## ## ##:'##:::. ##:: ##:: ## ### ##:. ######::::: ##:::: ##:::: ##: ########:: ######::: $NC"
-	echo -e "$PURPLE ##. ####: #########:: ##:: ##. #: ##::..... ##:::: ##:::: ##:::: ##: ##.. ##::: ##...:::: $NC"
-	echo -e "$PURPLE ##:. ###: ##.... ##:: ##:: ##:.:: ##:'##::: ##:::: ##:::: ##:::: ##: ##::. ##:: ##::::::: $NC"
-	echo -e "$PURPLE ##::. ##: ##:::: ##:'####: ##:::: ##:. ######::::: ##::::. #######:: ##:::. ##: ########: $NC"
+	    ##::: ##::::'###::::'####:'##::::'##:
+	    ###:: ##:::'## ##:::. ##:: ###::'###:
+	    ####: ##::'##:. ##::: ##:: ####'####:
+	    ## ## ##:'##:::. ##:: ##:: ## ### ##:
+	    ##. ####: #########:: ##:: ##. #: ##:
+	    ##:. ###: ##.... ##:: ##:: ##:.:: ##:
+	    ##::. ##: ##:::: ##:'####: ##:::: ##:
+
 	echo -e  "  ╔═════════════════════════════════════════════════════════════════╗" | lolcat
 	echo -e  "  ║                          ┃ MAIN MENU ┃                          ║" |lolcat
 	echo -e  "  ╠═════════════════════════════════════════════════════════════════╝" | lolcat

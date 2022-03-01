@@ -30,26 +30,52 @@ mkdir /etc/v2ray
 mkdir /etc/xray
 mkdir /var/lib/premium-script;
 mkdir /var/lib/crot-script;
-echo "MASUKKAN DOMAIN ANDA ATAU IP,KALAU TIADA TEKAN ENTER TQ"
+echo -e "$green   =============================================$NC"
+echo -e "$green    Sila Masukkan DOMAIN, Jika TIADA KLIK Enter: $NC"
+echo -e "$green   =============================================$NC"
 read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
 echo "$host" >> /root/domain
+echo "V1.0" >> /home/version
+echo "@naimstore" >> /home/contact
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/cf.sh && chmod +x cf.sh && ./cf.sh
+sleep 2
 #install ssh ovpn
+echo -e "$green   =============================================$NC"
+echo -e "$green                 Install SSH OVPN               $NC"
+echo -e "$green   =============================================$NC"
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
+echo -e "$green   =============================================$NC"
+echo -e "$green                     Install SSR                $NC"
+echo -e "$green   =============================================$NC"
+sleep 2
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
+echo -e "$green   =============================================$NC"
+echo -e "$green                 Install Wireguard              $NC"
+echo -e "$green   =============================================$NC"
+sleep 2
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
+echo -e "$green   =============================================$NC"
+echo -e "$green                  Install V2RAY                 $NC"
+echo -e "$green   =============================================$NC"
 wget http://raw.githubusercontent.com/nikstore/scriptvps/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install xray
+echo -e "$green   =============================================$NC"
+echo -e "$green                      Install XRAY              $NC"
+echo -e "$green   =============================================$NC"
+sleep 2
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/install-xray.sh && chmod +x install-xray.sh && screen -S xray ./install-xray.sh
-
 #install L2TP
+echo -e "$green   =============================================$NC"
+echo -e "$green                      Install L2TP              $NC"
+echo -e "$green   =============================================$NC"
+sleep 2
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
