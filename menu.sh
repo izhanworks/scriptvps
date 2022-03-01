@@ -136,7 +136,7 @@ echo -e  "  ║      [ 20 ] Speedtest VPS"
 echo -e  "  ║      [ 21 ] Displaying System Information"
 echo -e  "  ║      [ 22 ] Check Running System Status Tunneling"
 echo -e  "  ║      [ 23 ] Info Script"
-echo -e  "  ║      [ 24 ] Set Auto Reboot"
+echo -e  "  ║      [ 24 ] Set Auto Reboott"
 echo -e  "  ║
 echo -e  "  ╠═════════════════════════════════════════════════════════════════╗\e[m" | lolcat
 echo -e  "  ║ [0] Exit Menu                                                   ║\e[m" | lolcat
