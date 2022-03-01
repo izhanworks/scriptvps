@@ -76,7 +76,7 @@ echo "1.2" > /home/ver
 clear
 echo -e "$green   =============================================$NC"
 echo -e "$green         Proses Update Telah Selesai            $NC"
-echo -e "$green    Sila Tunggu Proses Reboot daan Taip Menu    $NC"
+echo -e "$green    Sila Tunggu Proses Reboot dan Taip Menu     $NC"
 echo -e "$green            Enjoy This Script                   $NC"
 echo -e "$green   =============================================$NC"
 sleep 15

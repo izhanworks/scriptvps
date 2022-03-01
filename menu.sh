@@ -221,6 +221,5 @@ echo -e   ""
    exit
    ;;
    *)
-   echo  "ERROR!! Tolong masukkan no yang betul!"
    ;;
   esac
