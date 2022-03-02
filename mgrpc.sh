@@ -28,9 +28,9 @@ echo -e "$yy 3$y. Extending Account XRAY/VMESS-GRPC/VLESS-GRPC Active Life$wh"
 echo -e "$yy 4$y. Check User Login XRAY/VMESS-GRPC/VLESS-GRPC $wh"
 echo -e "$yy 5$y. Script Update XRAY/VMESS-GRPC/VLESS-GRPC $wh"
 echo -e "$y-------------------------------------------------------------$wh"
-read -p "Select From Options [ 1 - 7 ] : " grpc
+read -p "Select From Options [ 1 - 7 ] : " $mgrpc
 echo -e ""
-case $grpc in
+case $mgrpc in
 1)
 addgrpc
 ;;

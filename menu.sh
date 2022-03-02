@@ -174,7 +174,7 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	   mgrpc
 	   ;;
 	   10)
-	   add-shot
+	   add-host
 	   ;;
 	   11)
 	   cff
@@ -186,7 +186,7 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	   cfh
 	   ;;
 	   14)
-	   change-banner
+	   change
 	   ;;
 	   15)
 	   auto backup
