@@ -26,6 +26,21 @@ if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
+apt -y install python
+apt -y install tmux
+apt -y install ruby
+gem install lolcat
+sudo snap install lolcat -y
+sudo apt-get install figlet -y
+
+# install
+apt install neofetch
+apt-get --reinstall --fix-missing install -y linux-headers-cloud-amd64 bzip2 gzip coreutils wget screen rsyslog iftop htop net-tools zip unzip wget net-tools curl nano sed screen gnupg gnupg1 bc apt-transport-https build-essential dirmngr libxml-parser-perl neofetch git lsof
+echo "clear" >> .profile
+echo "neofetch --ascii_distro SliTaz" >> .profile
+echo "echo -e '\e[35m  Script Premium By \e[32m nik \e[0m'" >> .profile
+
+cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/nikstore/BANNER/main/menu.sh"
 wget -O banner "https://raw.githubusercontent.com/nikstore/BANNER/main/BANNER.sh"
 wget -O menutry "https://raw.githubusercontent.com/nikstore/BANNER/main/menutry.sh"
@@ -50,6 +65,7 @@ echo -e "Premium" >> /var/lib/banner-name/banner
 echo -e "standard" >> /var/lib/banner-name/ASCII
 echo -e "Nama Anda" >> /var/lib/banner-name/username
 echo -e "\e[93m" >> /var/lib/banner-name/colour
+clear
 mkdir /etc/v2ray
 mkdir /etc/xray
 mkdir /var/lib/premium-script;
