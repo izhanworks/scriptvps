@@ -117,7 +117,8 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	echo -e  " $nc ║   [5]   -> ->         [Panel VMESS" | lolcat
 	echo -e  " $nc ║   [6]   -> ->         [Panel VLESS" | lolcat
 	echo -e  " $nc ║   [7]   -> ->         [Panel Trojan" | lolcat
-	echo -e  " $nc ║   [9]   -> ->         [Panel XRAY" | lolcat
+	echo -e  " $nc ║   [8]   -> ->         [Panel XRAY" | lolcat
+	echo -e  " $nc ║   [9]   -> ->         [Panel Grpc" | lolcat
 	echo -e  " $bl ║ "
 	echo -e  "  ╠═════════════════════════════════════════════════════════════════╗" | lolcat
 	echo -e  "  ║                           ┃ SYSTEM  ┃                           ║" | lolcat
@@ -125,18 +126,18 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	echo -e  " $bl ║"
 	echo -e  " $nc ║      [ 10 ] Add/Change Subdomain Host For VPS"
 	echo -e  " $nc ║      [ 11 ] Add ID Cloudflare"
-	echo -e  " $nc ║      [ 12 ] Change-Banner"
+	echo -e  " $nc ║      [ 12 ] Change Banner"
 	echo -e  " $nc ║      [ 13 ] Pointing BUG"
 	echo -e  " $nc ║      [ 14 ] Change Port Of Some Service"
 	echo -e  " $nc ║      [ 15 ] Autobackup Data VPS"
 	echo -e  " $nc ║      [ 16 ] Backup Data VPS"
-	echo -e  " $nc ║      [ 16 ] Restore Data VPS"
-	echo -e  " $nc ║      [ 17 ] Webmin Menu"
-	echo -e  " $nc ║      [ 18 ] Check Usage of VPS Ram"
-	echo -e  " $nc ║      [ 19 ] Reboot VPS"
-	echo -e  " $nc ║      [ 20 ] Speedtest VPS"
-	echo -e  " $nc ║      [ 21 ] Displaying System Information"
-	echo -e  " $nc ║      [ 22 ] Info Script"
+	echo -e  " $nc ║      [ 17 ] Restore Data VPS"
+	echo -e  " $nc ║      [ 18 ] Webmin Menu"
+	echo -e  " $nc ║      [ 19 ] Check Usage of VPS Ram"
+	echo -e  " $nc ║      [ 20 ] Reboot VPS"
+	echo -e  " $nc ║      [ 21 ] Speedtest VPS"
+	echo -e  " $nc ║      [ 22 ] Displaying System Information"
+	echo -e  " $nc ║      [ 23 ] Info Script"
 	echo -e  " $bl ║"
 	echo -e  "  ╠═════════════════════════════════════════════════════════════════╗\e[m" | lolcat
 	echo -e  "  ║ [0] Exit Menu                                                   ║\e[m" | lolcat
@@ -167,45 +168,51 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	   mtrojan
 	   ;;
 	   8)
-	   add-host
+	   mxray
 	   ;;
 	   9)
-	   cff
+	   grpcmenu
 	   ;;
 	   10)
-	   cfd
+	   add-shot
 	   ;;
 	   11)
-	   cfh
+	   cff
 	   ;;
 	   12)
-	   Change-Banner
+	   cfd
 	   ;;
 	   13)
-	   autobackup
+	   cfh
 	   ;;
 	   14)
-	   backup
+	   change-banner
 	   ;;
 	   15)
-	   restore
+	   auto backup
 	   ;;
 	   16)
-	   wbmn
+	   backup
 	   ;;
 	   17)
-	   ram
+	   restore
 	   ;;
 		 18)
-	   reboot
+	   wbmn
 	   ;;
 		 19)
-	   speedtest
+	   ram
 	   ;;
 		 20)
-	   info
+	   reboot
 	   ;;
 		 21)
+	   speedtest
+	   ;;
+		 22)
+	   info
+	   ;;
+		 22)
 	   about
 	   ;;
 	   0)

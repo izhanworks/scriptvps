@@ -84,6 +84,14 @@ echo -e "$green   =============================================$NC"
 sleep 2
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/nikstore/scriptvps/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+#install grpc
+echo -e "$green   =============================================$NC"
+echo -e "$green                      Install grpc              $NC"
+echo -e "$green   =============================================$NC"
+sleep 2
+wget https://raw.githubusercontent.com/nikstore/scriptvps/main/install-grpc.sh && chmod +x install-grpc.sh && screen -S grpc ./install-grpc.sh
+clear
+
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh

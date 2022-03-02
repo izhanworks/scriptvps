@@ -1,32 +1,59 @@
 #!/bin/bash
-
 clear
-echo -e "=============================================================================" | lolcat
-echo -e "#                   ༒︎ Premium Auto Script By nikstore ༒︎" | lolcat
-echo -e "#----------------------------------------------------------------------------" | lolcat
-echo -e "#                     For Debian 9 & Debian 10 64 bit" | lolcat
-echo -e "#                  For Ubuntu 18.04 & Ubuntu 20.04 64 bit" | lolcat
-echo -e "#                For VPS with KVM and VMWare virtualization" | lolcat
-echo -e "#                         ꧁ Build Up By nikstore ꧂" | lolcat
-echo -e "#-----------------------------------------------------------------------------" | lolcat
-echo -e "#                              ☞︎︎︎ Thanks To ☜︎︎︎                                " | lolcat
-echo -e "#-----------------------------------------------------#-----------------------" | lolcat
-echo -e "#                              ☞︎︎︎ Allah SWT ☜︎︎︎                                 " | lolcat
-echo -e "#                                My Family                                    " | lolcat
-echo -e "#                              ꧁  nikstore  ꧂                           " | lolcat
-echo -e "#                               ꧁ VPNCrew ꧂                                " | lolcat
-echo -e "#                               ꧁ My Self ꧂                                " | lolcat
-echo -e "#                       ꧁ Coding Tutorial Begginer ꧂               " | lolcat
-echo -e "#  ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ " | lolcat
-echo -e "#------------------------------------------------------------------------------ " | lolcat
-echo -e "=============================================================================== " | lolcat
-echo -e ""
-echo -e "\e[1;33m════════════════════════════════════════════════════════════\e[0m" | lolcat
-echo -e "\e[1;33m              𝑆𝐶𝑅𝐼𝑃𝑇 𝑉𝑃𝑆 𝐹𝑂𝑅 𝐷𝐸𝐵𝐼𝐴𝑁 𝐴𝑁𝐷 𝑈𝐵𝑈𝑁𝑇𝑈\e[0m" | lolcat
-echo -e ""
-echo -e "\e[1;33m              __   __ ___  ___  ___   ___  _____ \e[0m" | lolcat
-echo -e "\e[1;33m              \ \ / /| _ \/ __|| _ ) / _ \|_   _|\e[0m" | lolcat
-echo -e "\e[1;33m               \ V / |  _/\__ \| _ \| (_) | | |  \e[0m" | lolcat
-echo -e "\e[1;33m                \_/  |_|  |___/|___/ \___/  |_|  \e[0m" | lolcat
-echo -e ""
-echo -e "\e[1;33m                       ✵✫ 𝑆𝐼𝑁𝐶𝐸 2021 ✫✵ \e[0m" | lolcat
+echo -e "\e[0m                                                                            "
+echo -e "\e[92m                     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█                                "
+echo -e "\e[92m                     █░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█                                "
+echo -e "\e[92m                     █░░║║║╠─║─║─║║║║║╠─░░█                                "
+echo -e "\e[92m                     █░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█                                "
+echo -e "\e[92m                     █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█                                "
+echo -e "\e[0m                                                                            "
+echo -e "\e[93m                       AutoScript nik                                      "
+echo -e "\e[0m                                                                            "
+echo -e "\e[92m ████████ ██   ██  █████  ███    ██ ██   ██ ███████     ████████  ██████   "
+echo -e "\e[92m    ██    ██   ██ ██   ██ ████   ██ ██  ██  ██             ██    ██    ██  "
+echo -e "\e[92m    ██    ███████ ███████ ██ ██  ██ █████   ███████        ██    ██    ██  "
+echo -e "\e[92m    ██    ██   ██ ██   ██ ██  ██ ██ ██  ██       ██        ██    ██    ██  "
+echo -e "\e[92m    ██    ██   ██ ██   ██ ██   ████ ██   ██ ███████        ██     ██████   "
+echo -e "\e[92m                                                                           "
+echo -e "\e[92m                                                                           "
+echo -e "\e[92m   █████  ██      ██       █████  ██   ██     ███████ ██     ██ ████████   "
+echo -e "\e[92m  ██   ██ ██      ██      ██   ██ ██   ██     ██      ██     ██    ██      "
+echo -e "\e[92m  ███████ ██      ██      ███████ ███████     ███████ ██  █  ██    ██      "
+echo -e "\e[92m  ██   ██ ██      ██      ██   ██ ██   ██          ██ ██ ███ ██    ██      "
+echo -e "\e[92m  ██   ██ ███████ ███████ ██   ██ ██   ██     ███████  ███ ███     ██      "
+echo -e "\e[0m                                                                            "
+echo -e "\e[94m             ________________________________________________              "
+echo -e "\e[94m            /                                                \             "
+echo -e "\e[94m           |    _________________________________________     |            "
+echo -e "\e[94m           |   |                                         |    |            "
+echo -e "\e[94m           |   |  root:                                  |    |            "
+echo -e "\e[94m           |   |                                         |    |            "
+echo -e "\e[94m           |   |     LAJU-LAJU SAMPAI 500Mbps            |    |            "
+echo -e "\e[94m           |   |     NAK PERGI MANA BOSKU..              |    |            "
+echo -e "\e[94m           |   |     DAPAT BYPASS 10 Mbps                |    |            "
+echo -e "\e[94m           |   |     PUN SYUKUR DAH JIMAT                |    |            "
+echo -e "\e[94m           |   |                                         |    |            "
+echo -e "\e[94m           |   |                                         |    |            "
+echo -e "\e[94m           |   |                                         |    |            "
+echo -e "\e[94m           |   |                                         |    |            "
+echo -e "\e[94m           |   |                                         |    |            "
+echo -e "\e[94m           |   |                                         |    |            "
+echo -e "\e[94m           |   |_________________________________________|    |            "
+echo -e "\e[94m           |                                                  |            "
+echo -e "\e[94m            \_________________________________________________/            "
+echo -e "\e[94m                   \___________________________________/                   "
+echo -e "\e[93m                         Script by naim                                    "
+echo -e "\e[93m                          [1] BACK MENU                                    "
+echo -e "\e[93m        .----------------------------------------------------.             "
+echo -e "\e[93m        |             Script status : Premium                |             "
+echo -e "\e[93m        '----------------------------------------------------'             "
+read -p "               Select an option [1] than press ENTER: :  " Options
+sleep 1
+clear
+case $Options in
+		1)
+		clear
+		menu
+		exit
+		;;
+	esac

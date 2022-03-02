@@ -46,6 +46,10 @@ wget -O add-sstp "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-
 wget -O add-ws "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-ws.sh"
 wget -O add-vless "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-vless.sh"
 wget -O add-tr "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-tr.sh"
+wget -O addgrpc "https://raw.githubusercontent.com/nikstore/Mantap/main/xray/addgrpc.sh"
+wget -O cekgrpc "https://raw.githubusercontent.com/nikstore/Mantap/main/xray/cekgrpc.sh"
+wget -O delgrpc "https://raw.githubusercontent.com/nikstore/Mantap/main/xray/delgrpc.sh"
+wget -O renewgrpc "https://raw.githubusercontent.com/nikstore/Mantap/main/xray/renewgrpc.sh"
 clear
 echo -e "$green   =============================================$NC"
 echo -e "$green                 Update Selesai                 $NC"
