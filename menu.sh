@@ -99,12 +99,12 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	echo ""
 
 
-	figlet -f$ASCII "$banner" | lolcat
-	echo "___________________________________________________________"
-	username=$(cat /var/lib/banner-name/username)
+	#!/bin/bash
+	#paste ini di menu anda. Terpulang kepada tempat yg anda mahu. Sebaiknya di atas info detail vps anda.
+	banner=$(cat /var/lib/banner-name/banner)
 	echo ""
-	echo -e "Username:" "$username" | lolcat
-
+	figlet -f standard "$banner" | lolcat
+	echo "_______________"
 
 	echo -e  "  ╔═════════════════════════════════════════════════════════════════╗" | lolcat
 	echo -e  "  ║                          ┃ MAIN MENU ┃                          ║" |lolcat
