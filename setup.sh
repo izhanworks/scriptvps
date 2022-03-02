@@ -26,6 +26,24 @@ if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
+wget -O menu "https://raw.githubusercontent.com/nikstore/BANNER/main/menu.sh"
+wget -O banner "https://raw.githubusercontent.com/nikstore/BANNER/main/BANNER.sh"
+wget -O menutry "https://raw.githubusercontent.com/nikstore/BANNER/main/menutry.sh"
+wget -O colour "https://raw.githubusercontent.com/nikstore/BANNER/main/colour.sh"
+chmod +x menu
+chmod +x banner
+chmod +x menutry
+chmod +x colour
+#chmod +x menu-theme
+#paste ini di setup anda
+mkdir /var/lib/banner-name;
+echo "Enter your name, if not available, please click Enter"
+echo -e "Premium" >> /var/lib/banner-name/banner
+echo -e "standard" >> /var/lib/banner-name/ASCII
+echo -e "Nama Anda" >> /var/lib/banner-name/username
+echo -e "\e[93m" >> /var/lib/banner-name/colour
+rm -rf setup.sh
+clear
 mkdir /var/lib/banner-name;
 echo "Enter your name, if not available, please click Enter"
 echo -e "Premium" >> /var/lib/banner-name/banner
