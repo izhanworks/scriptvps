@@ -89,6 +89,13 @@ echo -e "* add-xray     : Create XRAY Vless
 echo -e "* del-xray     : Deleting XRAY Vless
 echo -e "* ex-xray      : Extending Vless Account Active Life
 echo -e ""
+echo -e "====================XRAY/VMESS-GRPC/VLESS-GRPC================"
+echo -e "addgrpc        : Create Account XRAY/VMESS-GRPC/VLESS-GRPC
+echo -e "delgrpc        : Delete Account XRAY/VMESS-GRPC/VLESS-GRPC
+echo -e "renewgrpc      : Extending Account XRAY/VMESS-GRPC/VLESS-GRPC Active Life
+echo -e "cekgrpc        : Check User Login XRAY/VMESS-GRPC/VLESS-GRPC
+echo -e "grpcupdate     : Script Update XRAY/VMESS-GRPC/VLESS-GRPC
+echo -e ""
 echo -e "=============================-SUBDO-=========================="
 echo -e "* add-host     : Tambah Atau Ubah Subdomain Host Untuk VPS"
 echo -e "* cff          : Tambahkan ID Cloudflare"
@@ -110,6 +117,6 @@ echo -e "* update       : Perbarui script"
 echo -e "* info         : Displaying System Information"
 echo -e "* about        : Info Script Auto Install"
 echo -e "* exit         : Exit From VPS "
-echo -e ""                SCRIPT BY info_android
+echo -e ""                SCRIPT BY nikstore
 echo -e "==============================================================="
 echo -e ""
