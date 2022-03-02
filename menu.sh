@@ -171,7 +171,7 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	   mxray
 	   ;;
 	   9)
-	   mgrpc
+	   m-grpc
 	   ;;
 	   10)
 	   add-shot
