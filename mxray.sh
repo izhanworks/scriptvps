@@ -43,13 +43,13 @@ del-xray
 renew-xray
 ;;
 4)
-addgrpc
+tbgrpc
 ;;
 5)
-delgrpc
+pdgrpc
 ;;
 6)
-renewgrpc
+brgrpc
 ;;
 7)
 cekgrpc
