@@ -126,7 +126,7 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	echo -e  " $bl ║"
 	echo -e  " $nc ║      [ 10 ] Add/Change Subdomain Host For VPS"
 	echo -e  " $nc ║      [ 11 ] Add ID Cloudflare"
-	echo -e  " $nc ║      [ 12 ] Change Banner"
+	echo -e  " $nc ║      [ 12 ] Change Banner"error
 	echo -e  " $nc ║      [ 13 ] Pointing BUG"
 	echo -e  " $nc ║      [ 14 ] Change Port Of Some Service"
 	echo -e  " $nc ║      [ 15 ] Autobackup Data VPS"
