@@ -20,6 +20,11 @@ echo -e  "  ║" | lolcat
 echo -e  "  ║  [ 1 ] Create XRAY Vless"
 echo -e  "  ║  [ 2 ] Deleting XRAY Vless"
 echo -e  "  ║  [ 3 ] Extending Vless Account Active Life"
+echo -e  "  ║  [ 4 ] Create Account XRAY/VMESS-GRPC/VLESS-GRPC
+echo -e  "  ║  [ 5 ] Delete Account XRAY/VMESS-GRPC/VLESS-GRPC
+echo -e  "  ║  [ 6 ] Extending Account XRAY/VMESS-GRPC/VLESS-GRPC Active Life
+echo -e  "  ║  [ 7 ] Check User Login XRAY/VMESS-GRPC/VLESS-GRPC
+echo -e  "  ║  [ 8 ] Script Update XRAY/VMESS-GRPC/VLESS-GRPC
 echo -e  "  ║" | lolcat
 echo -e  "  ╠═══════════════════════════════════════════════╗" | lolcat
 echo -e  "  ║ - CTRL C to cancel                            ║" | lolcat
@@ -36,6 +41,21 @@ del-xray
 ;;
 3)
 renew-xray
+;;
+4)
+addgrpc
+;;
+5)
+delgrpc
+;;
+6)
+renewgrpc
+;;
+7)
+cekgrpc
+;;
+8)
+grpcupdate
 ;;
 x)
 menu
