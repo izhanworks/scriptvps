@@ -6,7 +6,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 domain=$(cat /etc/xray/domain)
 apt install iptables iptables-persistent -y
-apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
+apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y
 apt install socat cron bash-completion ntpdate -y
 ntpdate pool.ntp.org
 apt -y install chrony
@@ -24,7 +24,7 @@ latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases |
 # / / Installation Xray Core
 xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_version/xray-linux-64.zip"
 
-# 
+#
 uuid=$(cat /proc/sys/kernel/random/uuid)
 
 # / / Make Main Directory
@@ -41,8 +41,8 @@ chmod +x /usr/local/bin/xray
 # Make Folder XRay
 mkdir -p /var/log/xray/
 #
-wget -q -O /usr/local/bin/geosite.dat "https://raw.githubusercontent.com/nikstore/Mantap/main/grpc/geosite.dat"
-wget -q -O /usr/local/bin/geoip.dat "https://raw.githubusercontent.com/nikstore/Mantap/main/grpc/geoip.dat"
+wget -q -O /usr/local/bin/geosite.dat "https://raw.githubusercontent.com/nikstore/scriptvps/main/grpc/geosite.dat"
+wget -q -O /usr/local/bin/geoip.dat "https://raw.githubusercontent.com/nikstore/scriptvps/main/grpc/geoip.dat"
 
 #
 cat > /etc/xray/sl-vmessgrpc.json << END
@@ -197,11 +197,14 @@ systemctl restart sl-vless-grpc
 #
 cd /usr/bin
 
-
-wget -O sl-addgrpc "https://raw.githubusercontent.com/nikstore/Mantap/main/grpc/sl-addgrpc.sh"
-chmod +x sl-addgrpc
-chmod +x sl-delgrpc
-chmod +x sl-renewgrpc
-chmod +x sl-cekgrpc
+# // Downloading Menu
+wget -q -O /usr/bin/add-xray "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-grpc.sh"
+wget -q -O /usr/bin/del-xray "https://raw.githubusercontent.com/nikstore/scriptvps/main/del-grpc.sh"
+wget -q -O /usr/bin/renew-xray "https://raw.githubusercontent.com/nikstore/scriptvps/main/renew-grpc.sh"
+wget -q -O /usr/bin/renew-xray "https://raw.githubusercontent.com/nikstore/scriptvps/main/grpcupdate.sh"
+chmod +x /usr/bin/add-grpc
+chmod +x /usr/bin/del-grpc
+chmod +x /usr/bin/renew-grpc
+chmod +x /usr/bin/grpcupdate
 
 rm -f sl-grpc.sh

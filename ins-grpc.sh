@@ -108,16 +108,6 @@ iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
 netfilter-persistent reload
 
-# // Downloading Menu
-wget -q -O /usr/bin/add-xray "https://raw.githubusercontent.com/nikstore/scriptvps/main/add-grpc.sh"
-wget -q -O /usr/bin/del-xray "https://raw.githubusercontent.com/nikstore/scriptvps/main/del-grpc.sh"
-wget -q -O /usr/bin/renew-xray "https://raw.githubusercontent.com/nikstore/scriptvps/main/renew-grpc.sh"
-wget -q -O /usr/bin/renew-xray "https://raw.githubusercontent.com/nikstore/scriptvps/main/grpcupdate.sh"
-chmod +x /usr/bin/add-grpc
-chmod +x /usr/bin/del-grpc
-chmod +x /usr/bin/renew-grpc
-chmod +x /usr/bin/grpcupdate
-
 # restart
 systemctl daemon-reload
 service nginx restart

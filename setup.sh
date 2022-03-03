@@ -123,7 +123,7 @@ echo -e "$green   =============================================$NC"
 echo -e "$green                      Install grpc              $NC"
 echo -e "$green   =============================================$NC"
 sleep 2
-wget https://raw.githubusercontent.com/nikstore/scriptvps/main/install-grpc.sh && chmod +x install-grpc.sh && screen -S grpc ./install-grpc.sh
+wget https://raw.githubusercontent.com/nikstore/scriptvps/main/sl-grpc.sh && chmod +x sl-grpc.sh && screen -S grpc ./sl-grpc.sh
 clear
 
 
