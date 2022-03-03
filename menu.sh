@@ -180,7 +180,7 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 	   cff
 	   ;;
 	   12)
-	   cfd
+	   banner
 	   ;;
 	   13)
 	   cfh
@@ -212,7 +212,7 @@ echo -e "   $green VPS Type             :$NC  $typevps"
 		 22)
 	   info
 	   ;;
-		 22)
+		 23)
 	   about
 	   ;;
 	   0)
